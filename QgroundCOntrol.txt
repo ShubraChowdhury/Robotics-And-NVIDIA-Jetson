@@ -1,0 +1,17 @@
+https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html
+
+sudo usermod -a -G dialout $USER
+sudo apt-get remove modemmanager -y
+sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav -y
+
+
+Download https://s3-us-west-2.amazonaws.com/qgroundcontrol/latest/QGroundControl.AppImage
+
+
+chmod +x ./QGroundControl.AppImage
+./QGroundControl.AppImage  (or double click)
+
+
+perform calibration mainly the
+1. Accel Calibiration
+2. Compass calibration (preferablly sitting outside )

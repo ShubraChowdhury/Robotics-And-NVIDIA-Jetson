@@ -1,0 +1,41 @@
+Starting copter simulator (SITL)
+SITL already Downloaded and Extracted.
+Ready to boot.
+warning: TCG doesn't support requested feature: CPUID.01H:ECX.vmx [bit 5]
+/lib64/ld-linux-x86-64.so.2: No such file or directory
+Connecting to vehicle on: tcp:127.0.0.1:5760
+Basic pre-arm checks
+Arming motors
+ Waiting for arming...
+Taking off!
+ Altitude:  -130.824
+ Altitude:  -130.853
+ Altitude:  -130.867
+ Altitude:  -130.873
+ Altitude:  -130.835
+ Altitude:  -130.811
+ Altitude:  -130.789
+ Altitude:  -130.72
+ Altitude:  -130.68
+CRITICAL:autopilot:Crash: Disarming
+ Altitude:  -130.683
+ Altitude:  -130.692
+ Altitude:  -130.693
+ Altitude:  -130.658
+ Altitude:  -130.607
+ Altitude:  -130.522
+ Altitude:  -130.514
+ Altitude:  -130.537
+ Altitude:  -130.527
+ Altitude:  -130.487
+ Altitude:  -130.442
+ Altitude:  -130.437
+ Altitude:  -130.426
+ Altitude:  -130.382
+ Altitude:  -130.365
+ Altitude:  -130.405
+ Altitude:  -130.488
+ Altitude:  -130.523
+ Altitude:  -130.563
+ Altitude:  -130.621
+ Altitude:  -130.698
