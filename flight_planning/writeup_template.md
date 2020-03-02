@@ -29,8 +29,17 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
 
 There are two main files that I have modified 
-    #### 1.`motion_planning.py` 
-    #### 2.  `planning_utils.py`
+#### 1.`motion_planning.py` this file differs from  backyard_flyer_solution.py  where the sates [MANUAL ,ARMING ,TAKEOFF ,WAYPOINT ,LANDING ,DISARMING ] has been set to manual where as in motion planning [MANUAL,ARMING,TAKEOFF,WAYPOINT,LANDING,DISARMING,PLANNING] have been set to auto.  backyard_flyer_solution.py has a defines path /waypoint[[10.0, 0.0, 3.0], [10.0, 10.0, 3.0], [0.0, 10.0, 3.0], [0.0, 0.0, 3.0]] where is in motion planning we are setting up the start point , goal are set and the path is derived by A* and further is pruned.
+
+path_prune(self,path): is used to prune path it checks for collinearity, where If the 3 points are in a line remove the 2nd point. The 3rd point now becomes and 2nd point and the check is redone with a new third point on the next iteration.
+
+
+
+#### 2.  `planning_utils.py` creates grid, and takes multiple action those are  valid actions,  a_star, heuristic (using np.linalg.), heuristic_func(np.sqrt ..). In A* method i have implemented  diagonal motions with a cost of sqrt(2)
+    NORTH_WEST = (-1, -1, np.sqrt(2))
+    NORTH_EAST = (-1, 1, np.sqrt(2))
+    SOUTH_WEST = (1, -1, np.sqrt(2))
+    SOUTH_EAST = (1, 1, np.sqrt(2))
 
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
 ![Top Down View](./misc/high_up.png)
