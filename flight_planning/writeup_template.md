@@ -41,6 +41,19 @@ path_prune(self,path): is used to prune path it checks for collinearity, where I
     SOUTH_WEST = (1, -1, np.sqrt(2))
     SOUTH_EAST = (1, 1, np.sqrt(2))
 
+planning utils also validated obstruction for diagonals and removes it in addition to  removing the obstructed NORTH, SOUTH, EAST , WEST
+
+    if (x - 1 < 0 or y - 1 < 0) or grid[x - 1, y - 1] == 1:
+        valid_actions.remove(Action.NORTH_WEST)
+    if (x - 1 < 0 or y + 1 > m) or grid[x - 1, y + 1] == 1:
+        valid_actions.remove(Action.NORTH_EAST)
+    if (x + 1 > n or y - 1 < 0) or grid[x + 1, y - 1] == 1:
+        valid_actions.remove(Action.SOUTH_WEST)
+    if (x + 1 > n or y + 1 > m) or grid[x + 1, y + 1] == 1:
+        valid_actions.remove(Action.SOUTH_EAST)
+   
+
+
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
 ![Top Down View](./misc/high_up.png)
 
@@ -55,6 +68,16 @@ Here's | A | Snappy | Table
 
 #### 1. Set your global home position
 Here students should read the first line of the csv file, extract lat0 and lon0 as floating point values and use the self.set_home_position() method to set global home. Explain briefly how you accomplished this in your code.
+
+Lat and Long are defined in the file as first line of the file `colliders.csv' values are reflected as lat0 37.792480, lon0 -122.397450. I have parsed the file to read the first line and used split to row by coma and replace the text value. Once the value has been retrived the same has been applied to home position , below is the code snippet.
+    
+    with open('colliders.csv') as lat_long:
+            latLon = lat_long.readline().rstrip().replace('lat0','').replace('lon0 ','').split(',')
+            lat0 = float(latLon[0])
+            lon0 = float(latLon[1])
+    
+    self.set_home_position(lon0, lat0, 0)
+
 
 
 And here is a lovely picture of our downtown San Francisco environment from above!
