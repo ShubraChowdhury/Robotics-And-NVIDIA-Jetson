@@ -110,6 +110,31 @@ Meanwhile, here's a picture of me flying through the trees!
 #### 3. Set grid start position from local position
 This is another step in adding flexibility to the start location. As long as it works you're good to go!
 
+
+
+        # Read in obstacle map
+        data = np.loadtxt('colliders.csv', delimiter=',', dtype='Float64', skiprows=2)
+        
+        # Define a grid for a particular altitude and safety margin around obstacles
+        grid, north_offset, east_offset = create_grid(data, TARGET_ALTITUDE, SAFETY_DISTANCE)
+        
+        print("North offset = {0}, east offset = {1}".format(north_offset, east_offset))
+        # North offset = -316, east offset = -445
+        
+        
+        # Define starting point on the grid (this is just grid center)
+        grid_start = (-north_offset, -east_offset)
+        
+        print(" Grid start --initial that is map center :",grid_start)
+        #Grid start --initial that is map center : (315, 445)
+        
+        # TODO: convert start position to current position rather than map center
+        
+        grid_start = (int(current_local_position[0]-north_offset), int(current_local_position[1]-east_offset))
+        
+        print("Grid start after adding map center ", grid_start)
+        #Grid start after adding map center  (315, 445)
+        
 #### 4. Set grid goal position from geodetic coords
 This step is to add flexibility to the desired goal location. Should be able to choose any (lat, lon) within the map and have it rendered to a goal location on the grid.
 
