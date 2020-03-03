@@ -29,13 +29,13 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
 
 There are two main files that I have modified 
-#### 1.`motion_planning.py` this file differs from  backyard_flyer_solution.py  where the sates [MANUAL ,ARMING ,TAKEOFF ,WAYPOINT ,LANDING ,DISARMING ] has been set to manual where as in motion planning [MANUAL,ARMING,TAKEOFF,WAYPOINT,LANDING,DISARMING,PLANNING] have been set to auto.  backyard_flyer_solution.py has a defines path /waypoint[[10.0, 0.0, 3.0], [10.0, 10.0, 3.0], [0.0, 10.0, 3.0], [0.0, 0.0, 3.0]] where is in motion planning we are setting up the start point , goal are set and the path is derived by A* and further is pruned.
+###### 1.`motion_planning.py` this file differs from  backyard_flyer_solution.py  where the sates [MANUAL ,ARMING ,TAKEOFF ,WAYPOINT ,LANDING ,DISARMING ] has been set to manual where as in motion planning [MANUAL,ARMING,TAKEOFF,WAYPOINT,LANDING,DISARMING,PLANNING] have been set to auto.  backyard_flyer_solution.py has a defines path /waypoint[[10.0, 0.0, 3.0], [10.0, 10.0, 3.0], [0.0, 10.0, 3.0], [0.0, 0.0, 3.0]] where is in motion planning we are setting up the start point , goal are set and the path is derived by A* and further is pruned.
 
 path_prune(self,path): is used to prune path it checks for collinearity, where If the 3 points are in a line remove the 2nd point. The 3rd point now becomes and 2nd point and the check is redone with a new third point on the next iteration.
 
 
 
-#### 2.  `planning_utils.py` creates grid, and takes multiple action those are  valid actions,  a_star, heuristic (using np.linalg.), heuristic_func(np.sqrt ..). In A* method i have implemented  diagonal motions with a cost of sqrt(2)
+###### 2.  `planning_utils.py` creates grid, and takes multiple action those are  valid actions,  a_star, heuristic (using np.linalg.), heuristic_func(np.sqrt ..). In A* method i have implemented  diagonal motions with a cost of sqrt(2)
     NORTH_WEST = (-1, -1, np.sqrt(2))
     NORTH_EAST = (-1, 1, np.sqrt(2))
     SOUTH_WEST = (1, -1, np.sqrt(2))
@@ -85,6 +85,23 @@ And here is a lovely picture of our downtown San Francisco environment from abov
 
 #### 2. Set your current local position
 Here as long as you successfully determine your local position relative to global home you'll be all set. Explain briefly how you accomplished this in your code.
+
+In order to get the local position i have to get the global position  which has Long , Lat and alt and this is obtained by self._longitude, self._latitude, self._altitude. Next you will have to get the global home (self.global_home).Once you have both you can use global_to_local method of frame_utils.py () https://github.com/udacity/udacidrone/blob/master/udacidrone/frame_utils.py 
+global_to_local(global_position, global_home), Convert a global position (lon, lat, up) to a local position (north, east, down) relative to the home position. Returns  numpy array of the local position [north, east, down]
+
+    global_position = [self._longitude, self._latitude, self._altitude]
+    current_local_position = global_to_local(global_position,self.global_home)
+    print('global home {0}, global position {1}, local position {2}'.format(self.global_home, self.global_position,
+                                                                         self.local_position))
+                                                                    
+    print('current_local_position {0}'.format(current_local_position))
+    
+    Following are the values I have received:
+    #global home [-122.3957515   37.7932817    0.       ]
+    #global position [-1.22397449e+02  3.77924796e+01 -2.80000000e-02]
+    # local position [-0.03823025  0.05000484  0.02808646]
+    #ccurrent_local_position [-0.04403942  0.05311325  0.028     ]
+
 
 
 Meanwhile, here's a picture of me flying through the trees!
