@@ -299,12 +299,12 @@ The specific performance metrics are as follows:
 Thanks to Fotokite for the initial development of the project code and simulator.
 
 
-###===================== SOLUTION ==================================#
-###Scenario 1: Intro
-In this scenario, we adjust the mass of the drone in /cpp/config/QuadControlParams.txt until it hovers for a bit:
+# ===================== SOLUTION ==================================##
+### Scenario 1: Intro##
+-In this scenario, we adjust the mass of the drone in /cpp/config/QuadControlParams.txt until it hovers for a bit:
 
 
-At Mass = 0.5 , it stabilizes.
+-At Mass = 0.5 , it stabilizes.
 
 Simulation #42 (../config/1_Intro.txt)
 PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
@@ -317,9 +317,9 @@ PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 second
 Simulation #46 (../config/1_Intro.txt)
 PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
 
-Output Reference files : 
-1. Scenario-1.mp4
-2. Scenario-1.PNG
+## Output Reference files : 
+#### 1. Scenario-1.mp4
+#### 2. Scenario-1.PNG
 
 <p align="center">
 <img src="QUAD_EVAL_Image_Video/Scenario-1.mp4" width="500"/>
@@ -331,14 +331,14 @@ Output Reference files :
 
 <video src="Scenario-1.mp4" poster="Scenario-1.PNG" width="320" height="200" controls preload></video>
 
-###================================ Body rate and roll/pitch control (scenario 2 PART 1)==========================================
-Implement body rate control
-implement the code in the function GenerateMotorCommands()
-implement the code in the function BodyRateControl()
+### ================================ Body rate and roll/pitch control (scenario 2 PART 1)==========================================
+-Implement body rate control
+-implement the code in the function GenerateMotorCommands()
+-implement the code in the function BodyRateControl()
 
-Output Reference files : 
-1. Scenario-2_1.mp4
-2. Scenario-2_1.PNG
+### Output Reference files : 
+#### 1. Scenario-2_1.mp4
+#### 2. Scenario-2_1.PNG
 
 <p align="center">
 <img src="QUAD_EVAL_Image_Video/Scenario-2_1.mp4" width="500"/>
@@ -348,42 +348,35 @@ Output Reference files :
 <img src="QUAD_EVAL_Image_Video/Scenario-2_1.PNG" width="500"/>
 </p>
 
-[QuadControlParams] 
-
-UseIdealEstimator=1
-
-# Physical properties
-Mass = 0.5
-L = 0.17
-Ixx = 0.0023
-Iyy = 0.0023
-Izz = 0.0046
-kappa = 0.016
-minMotorThrust = .1
-maxMotorThrust = 4.5
-
-# Position control gains
-kpPosXY = 30
-kpPosZ = 20
-KiPosZ = 40
-
-# Velocity control gains
-kpVelXY = 12.0
-kpVelZ = 9.0
-
-# Angle control gains
-kpBank = 8
-kpYaw = 1
-
-# Angle rate gains
-kpPQR = 40,40, 15
-
-# limits
-maxAscentRate = 5
-maxDescentRate = 2
-maxSpeedXY = 5
-maxHorizAccel = 12
-maxTiltAngle = .7
+         [QuadControlParams] 
+         UseIdealEstimator=1
+         # Physical properties
+         Mass = 0.5
+         L = 0.17
+         Ixx = 0.0023
+         Iyy = 0.0023
+         Izz = 0.0046
+         kappa = 0.016
+         minMotorThrust = .1
+         maxMotorThrust = 4.5
+         # Position control gains
+         kpPosXY = 30
+         kpPosZ = 20
+         KiPosZ = 40
+         # Velocity control gains
+         kpVelXY = 12.0
+         kpVelZ = 9.0
+         # Angle control gains
+         kpBank = 8
+         kpYaw = 1
+         # Angle rate gains
+         kpPQR = 40,40, 15
+         # limits
+         maxAscentRate = 5
+         maxDescentRate = 2
+         maxSpeedXY = 5
+         maxHorizAccel = 12
+         maxTiltAngle = .7
 
 Simulation #106 (../config/2_AttitudeControl.txt)
 PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
