@@ -331,7 +331,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 
 <video src="Scenario-1.mp4" poster="Scenario-1.PNG" width="320" height="200" controls preload></video>
 
-### ================================ Body rate and roll/pitch control (scenario 2 PART 1)==========================================
+### ===== Body rate and roll/pitch control (scenario 2 PART 1) ====
 -Implement body rate control
 -implement the code in the function GenerateMotorCommands()
 -implement the code in the function BodyRateControl()
