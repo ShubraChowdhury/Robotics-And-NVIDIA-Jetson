@@ -299,7 +299,9 @@ The specific performance metrics are as follows:
 Thanks to Fotokite for the initial development of the project code and simulator.
 
 
-# =====SOLUTION =====##
+## =====Solution  Evaluation =====##
+
+- Refer c++ file src/QuadControl.cpp
 ### Scenario 1: Intro##
 -In this scenario, we adjust the mass of the drone in /cpp/config/QuadControlParams.txt until it hovers for a bit:
 
