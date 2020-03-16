@@ -299,9 +299,9 @@ The specific performance metrics are as follows:
 Thanks to Fotokite for the initial development of the project code and simulator.
 
 
-## =====Solution  Evaluation =====##
+## =====Solution  Evaluation =====
 
-- Refer c++ file src/QuadControl.cpp
+- Refer c++ file src/QuadControl.cpp 
 ### Scenario 1: Intro##
 -In this scenario, we adjust the mass of the drone in /cpp/config/QuadControlParams.txt until it hovers for a bit:
 
@@ -324,7 +324,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 #### 2. Scenario-1.PNG
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-1.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/1.gif" width="500"/>
 </p>
 
 <p align="center">
@@ -343,7 +343,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 #### 2. Scenario-2_1.PNG
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-2_1.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/2_1.gif" width="500"/>
 </p>
 
 <p align="center">
@@ -412,7 +412,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 #### 2. Scenario-2_2.PNG
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-2_2.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/2_2.gif" width="500"/>
 </p>
 
 <p align="center">
@@ -488,7 +488,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-3.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/3.gif" width="500"/>
 </p>
 
 <p align="center">
@@ -579,7 +579,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 #### 2. Scenario-4.PNG
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-4.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/4.gif" width="500"/>
 </p>
 
 <p align="center">
@@ -654,7 +654,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-5.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/5.gif" width="500"/>
 </p>
 
 <p align="center">
@@ -715,7 +715,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 #### 2. Scenario-6-X_TestManyQuads.PNG
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-6-X_TestManyQuads.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/6.gif" width="500"/>
 </p>
 
 <p align="center">
@@ -740,7 +740,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
 ### 2. Scenario-7-X_TestMavlink.PNG
 
 <p align="center">
-<img src="QUAD_EVAL_Image_Video/Scenario-7-X_TestMavlink.mp4" width="500"/>
+<img src="QUAD_EVAL_Image_Video/7.gif" width="500"/>
 </p>
 
 <p align="center">
