@@ -329,6 +329,7 @@ Output Reference files :
 <img src="QUAD_EVAL_Image_Video/Scenario-1.PNG" width="500"/>
 </p>
 
+<video src="Scenario-1.mp4" poster="Scenario-1.PNG" width="320" height="200" controls preload></video>
 
 ###================================ Body rate and roll/pitch control (scenario 2 PART 1)==========================================
 Implement body rate control
