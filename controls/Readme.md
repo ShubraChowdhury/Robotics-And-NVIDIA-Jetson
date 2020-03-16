@@ -301,7 +301,8 @@ Thanks to Fotokite for the initial development of the project code and simulator
 
 ## =====Solution  Evaluation =====
 
-- Refer c++ file src/QuadControl.cpp 
+- Refer  [c++ controller code](https://github.com/ShubraChowdhury/jetson/blob/master/controls/src/BaseController.cpp)
+
 ### Scenario 1: Intro##
 -In this scenario, we adjust the mass of the drone in /cpp/config/QuadControlParams.txt until it hovers for a bit:
 
