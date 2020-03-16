@@ -299,23 +299,23 @@ The specific performance metrics are as follows:
 Thanks to Fotokite for the initial development of the project code and simulator.
 
 
-# ===================== SOLUTION ==================================##
+# =====SOLUTION =====##
 ### Scenario 1: Intro##
 -In this scenario, we adjust the mass of the drone in /cpp/config/QuadControlParams.txt until it hovers for a bit:
 
 
 -At Mass = 0.5 , it stabilizes.
 
-Simulation #42 (../config/1_Intro.txt)
-PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
-Simulation #43 (../config/1_Intro.txt)
-PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
-Simulation #44 (../config/1_Intro.txt)
-PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
-Simulation #45 (../config/1_Intro.txt)
-PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
-Simulation #46 (../config/1_Intro.txt)
-PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
+  Simulation #42 (../config/1_Intro.txt)
+  PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
+  Simulation #43 (../config/1_Intro.txt)
+  PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
+  Simulation #44 (../config/1_Intro.txt)
+  PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
+  Simulation #45 (../config/1_Intro.txt)
+  PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
+  Simulation #46 (../config/1_Intro.txt)
+  PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 seconds
 
 ## Output Reference files : 
 #### 1. Scenario-1.mp4
@@ -378,36 +378,36 @@ PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 second
          maxHorizAccel = 12
          maxTiltAngle = .7
 
-Simulation #106 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #107 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #108 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #109 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #110 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #111 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #112 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #106 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #107 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #108 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #109 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #110 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #111 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #112 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
 
 
-###===========   Body rate and roll/pitch control (scenario 2 PART 2) =======================================================
+### ====   Body rate and roll/pitch control (scenario 2 PART 2) ====
 -implement the code in the function RollPitchControl()
 -Tune kpBank in QuadControlParams.txt to minimize settling time but avoid too much overshoot
 
-Output Reference files : 
-1. Scenario-2_2.mp4
-2. Scenario-2_2.PNG
+### Output Reference files : 
+#### 1. Scenario-2_2.mp4
+#### 2. Scenario-2_2.PNG
 
 <p align="center">
 <img src="QUAD_EVAL_Image_Video/Scenario-2_2.mp4" width="500"/>
@@ -419,63 +419,56 @@ Output Reference files :
 
 
 
-[QuadControlParams] 
+        [QuadControlParams] 
+        UseIdealEstimator=1
+        # Physical properties
+        Mass = 0.5
+        L = 0.17
+        Ixx = 0.0023
+        Iyy = 0.0023
+        Izz = 0.0046
+        kappa = 0.016
+        minMotorThrust = .1
+        maxMotorThrust = 4.5
+        # Position control gains
+        kpPosXY = 30
+        kpPosZ = 20
+        KiPosZ = 40
+        # Velocity control gains
+        kpVelXY = 12.0
+        kpVelZ = 9.0
+        # Angle control gains
+        kpBank = 1
+        kpYaw = 3
+        # Angle rate gains
+        kpPQR = 40,40, 15
+        # limits
+        maxAscentRate = 5
+        maxDescentRate = 2
+        maxSpeedXY = 5
+        maxHorizAccel = 12
+        maxTiltAngle = .7
 
-UseIdealEstimator=1
+        Simulation #40 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #41 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #42 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #43 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #44 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
+        Simulation #45 (../config/2_AttitudeControl.txt)
+        PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
+        PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
 
-# Physical properties
-Mass = 0.5
-L = 0.17
-Ixx = 0.0023
-Iyy = 0.0023
-Izz = 0.0046
-kappa = 0.016
-minMotorThrust = .1
-maxMotorThrust = 4.5
-
-# Position control gains
-kpPosXY = 30
-kpPosZ = 20
-KiPosZ = 40
-
-# Velocity control gains
-kpVelXY = 12.0
-kpVelZ = 9.0
-
-# Angle control gains
-kpBank = 1
-kpYaw = 3
-
-# Angle rate gains
-kpPQR = 40,40, 15
-
-# limits
-maxAscentRate = 5
-maxDescentRate = 2
-maxSpeedXY = 5
-maxHorizAccel = 12
-maxTiltAngle = .7
-
-Simulation #40 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #41 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #42 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #43 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #44 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-Simulation #45 (../config/2_AttitudeControl.txt)
-PASS: ABS(Quad.Roll) was less than 0.025000 for at least 0.750000 seconds
-PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
-
-###=========================  Position/velocity and yaw angle control (scenario 3) ============================================
+### =====  Position/velocity and yaw angle control (scenario 3) =======
 
 
  - implement the code in the function `LateralPositionControl()`
@@ -487,9 +480,9 @@ PASS: ABS(Quad.Omega.X) was less than 2.500000 for at least 0.750000 seconds
  - tune parameters `kpYaw` and the 3rd (z) component of `kpPQR`
 
 
-Output Reference files : 
-1. Scenario-3.mp4
-2. Scenario-3.PNG
+### Output Reference files : 
+#### 1. Scenario-3.mp4
+#### 2. Scenario-3.PNG
 
 
 <p align="center">
@@ -501,87 +494,87 @@ Output Reference files :
 </p>
 
 
-[QuadControlParams] 
+           [QuadControlParams] 
 
-UseIdealEstimator=1
+           UseIdealEstimator=1
 
-# Physical properties
-Mass = 0.5
-L = 0.17
-Ixx = 0.0023
-Iyy = 0.0023
-Izz = 0.0046
-kappa = 0.016
-minMotorThrust = .1
-maxMotorThrust = 4.5
+           # Physical properties
+           Mass = 0.5
+           L = 0.17
+           Ixx = 0.0023
+           Iyy = 0.0023
+           Izz = 0.0046
+           kappa = 0.016
+           minMotorThrust = .1
+           maxMotorThrust = 4.5
 
-# Position control gains
-kpPosXY = 30
-kpPosZ = 20
-KiPosZ = 40
+           # Position control gains
+           kpPosXY = 30
+           kpPosZ = 20
+           KiPosZ = 40
 
-# Velocity control gains
-kpVelXY = 12.0
-kpVelZ = 9.0
+           # Velocity control gains
+           kpVelXY = 12.0
+           kpVelZ = 9.0
 
-# Angle control gains
-kpBank = 8
-kpYaw = 2
+           # Angle control gains
+           kpBank = 8
+           kpYaw = 2
 
-# Angle rate gains
-kpPQR = 40,40, 15
+           # Angle rate gains
+           kpPQR = 40,40, 15
 
-# limits
-maxAscentRate = 5
-maxDescentRate = 2
-maxSpeedXY = 5
-maxHorizAccel = 12
-maxTiltAngle = .7
-
-
+           # limits
+           maxAscentRate = 5
+           maxDescentRate = 2
+           maxSpeedXY = 5
+           maxHorizAccel = 12
+           maxTiltAngle = .7
 
 
-Simulation #82 (../config/3_PositionControl.txt)
-PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
-Simulation #83 (../config/3_PositionControl.txt)
-PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
-Simulation #84 (../config/3_PositionControl.txt)
-PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
-Simulation #85 (../config/3_PositionControl.txt)
-PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
-Simulation #86 (../config/3_PositionControl.txt)
-PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
-Simulation #87 (../config/3_PositionControl.txt)
-PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
-PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
-
-###======================  Non-idealities and robustness (scenario 4) ===========================================
-In this part, we will explore some of the non-idealities and robustness of a controller. For this simulation, we will use Scenario 4. This is a configuration with 3 quads that are all are trying to move one meter forward. However, this time, these quads are all a bit different:
-
-The green quad has its center of mass shifted back
-The orange vehicle is an ideal quad
-The red vehicle is heavier than usual
-Run your controller & parameter set from Step 3. Do all the quads seem to be moving OK? If not, try to tweak the controller parameters to work for all 3 (tip: relax the controller).
-
-Edit AltitudeControl() to add basic integral control to help with the different-mass vehicle.
-
-Tune the integral control, and other control parameters until all the quads successfully move properly. Your drones' motion should look like this:
 
 
-Output Reference files : 
-1. Scenario-4.mp4
-2. Scenario-4.PNG
+           Simulation #82 (../config/3_PositionControl.txt)
+           PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
+           Simulation #83 (../config/3_PositionControl.txt)
+           PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
+           Simulation #84 (../config/3_PositionControl.txt)
+           PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
+           Simulation #85 (../config/3_PositionControl.txt)
+           PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
+           Simulation #86 (../config/3_PositionControl.txt)
+           PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
+           Simulation #87 (../config/3_PositionControl.txt)
+           PASS: ABS(Quad1.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Pos.X) was less than 0.100000 for at least 1.250000 seconds
+           PASS: ABS(Quad2.Yaw) was less than 0.100000 for at least 1.000000 seconds
+
+### =====  Non-idealities and robustness (scenario 4) ======
+- In this part, we will explore some of the non-idealities and robustness of a controller. For this simulation, we will use Scenario 4. - This is a configuration with 3 quads that are all are trying to move one meter forward. However, this time, these quads are all a bit different:
+
+- The green quad has its center of mass shifted back
+- The orange vehicle is an ideal quad
+- The red vehicle is heavier than usual
+-  Run your controller & parameter set from Step 3. Do all the quads seem to be moving OK? If not, try to tweak the controller parameters to work for all 3 (tip: relax the controller).
+
+-  Edit AltitudeControl() to add basic integral control to help with the different-mass vehicle.
+
+-  Tune the integral control, and other control parameters until all the quads successfully move properly. Your drones' motion should look like this:
+
+
+### Output Reference files : 
+#### 1. Scenario-4.mp4
+#### 2. Scenario-4.PNG
 
 <p align="center">
 <img src="QUAD_EVAL_Image_Video/Scenario-4.mp4" width="500"/>
@@ -592,70 +585,70 @@ Output Reference files :
 </p>
 
 
-Mass = 0.5
-L = 0.17
-Ixx = 0.0023
-Iyy = 0.0023
-Izz = 0.0046
-kappa = 0.016
-minMotorThrust = .1
-maxMotorThrust = 4.5
-# Position control gains
-kpPosXY = 30
-kpPosZ = 20
-KiPosZ = 40
-# Velocity control gains
-kpVelXY = 12.0
-kpVelZ = 9.0
-# Angle control gains
-kpBank = 8
-kpYaw = 2
-# Angle rate gains
-kpPQR = 40,40, 15
-# limits
-maxAscentRate = 5
-maxDescentRate = 2
-maxSpeedXY = 5
-maxHorizAccel = 12
-maxTiltAngle = .7
+          Mass = 0.5
+          L = 0.17
+          Ixx = 0.0023
+          Iyy = 0.0023
+          Izz = 0.0046
+          kappa = 0.016
+          minMotorThrust = .1
+          maxMotorThrust = 4.5
+          # Position control gains
+          kpPosXY = 30
+          kpPosZ = 20
+          KiPosZ = 40
+          # Velocity control gains
+          kpVelXY = 12.0
+          kpVelZ = 9.0
+          # Angle control gains
+          kpBank = 8
+          kpYaw = 2
+          # Angle rate gains
+          kpPQR = 40,40, 15
+          # limits
+          maxAscentRate = 5
+          maxDescentRate = 2
+          maxSpeedXY = 5
+          maxHorizAccel = 12
+          maxTiltAngle = .7
 
 
 
-Simulation #139 (../config/4_Nonidealities.txt)
-PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-Simulation #140 (../config/4_Nonidealities.txt)
-PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-Simulation #141 (../config/4_Nonidealities.txt)
-PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-Simulation #142 (../config/4_Nonidealities.txt)
-PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-Simulation #143 (../config/4_Nonidealities.txt)
-PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-Simulation #144 (../config/4_Nonidealities.txt)
-PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
-PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          Simulation #139 (../config/4_Nonidealities.txt)
+          PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          Simulation #140 (../config/4_Nonidealities.txt)
+          PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          Simulation #141 (../config/4_Nonidealities.txt)
+          PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          Simulation #142 (../config/4_Nonidealities.txt)
+          PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          Simulation #143 (../config/4_Nonidealities.txt)
+          PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          Simulation #144 (../config/4_Nonidealities.txt)
+          PASS: ABS(Quad1.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
+          PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 seconds
 
 
-###=============== Tracking trajectories Scenario 5 ================
-Now that we have all the working parts of a controller, you will put it all together and test it's performance once again on a trajectory. For this simulation, you will use Scenario 5. This scenario has two quadcopters:
+### == Tracking trajectories Scenario 5 ========
+- Now that we have all the working parts of a controller, you will put it all together and test it's performance once again on a trajectory. For this simulation, you will use Scenario 5. This scenario has two quadcopters:
 
-the orange one is following traj/FigureEight.txt
-the other one is following traj/FigureEightFF.txt
+- the orange one is following traj/FigureEight.txt
+- the other one is following traj/FigureEightFF.txt
 
-Output Reference files : 
-1. Scenario-5.mp4
-2. Scenario-5.PNG
+### Output Reference files : 
+#### 1. Scenario-5.mp4
+#### 2. Scenario-5.PNG
 
 
 <p align="center">
@@ -666,58 +659,58 @@ Output Reference files :
 <img src="QUAD_EVAL_Image_Video/Scenario-5.PNG" width="500"/>
 </p>
 
-Mass = 0.5
-L = 0.17
-Ixx = 0.0023
-Iyy = 0.0023
-Izz = 0.0046
-kappa = 0.016
-minMotorThrust = .1
-maxMotorThrust = 4.5
+          Mass = 0.5
+          L = 0.17
+          Ixx = 0.0023
+          Iyy = 0.0023
+          Izz = 0.0046
+          kappa = 0.016
+          minMotorThrust = .1
+          maxMotorThrust = 4.5
 
-# Position control gains
-kpPosXY = 30
-kpPosZ = 20
-KiPosZ = 40
+          # Position control gains
+          kpPosXY = 30
+          kpPosZ = 20
+          KiPosZ = 40
 
-# Velocity control gains
-kpVelXY = 12.0
-kpVelZ = 9.0
+          # Velocity control gains
+          kpVelXY = 12.0
+          kpVelZ = 9.0
 
-# Angle control gains
-kpBank = 8
-kpYaw = 2
+          # Angle control gains
+          kpBank = 8
+          kpYaw = 2
 
-# Angle rate gains
-kpPQR = 40,40, 15
+          # Angle rate gains
+          kpPQR = 40,40, 15
 
-# limits
-maxAscentRate = 5
-maxDescentRate = 2
-maxSpeedXY = 5
-maxHorizAccel = 12
-maxTiltAngle = .7
-
-
-Simulation #173 (../config/5_TrajectoryFollow.txt)
-Simulation #174 (../config/5_TrajectoryFollow.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #175 (../config/5_TrajectoryFollow.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #176 (../config/5_TrajectoryFollow.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #177 (../config/5_TrajectoryFollow.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #178 (../config/5_TrajectoryFollow.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          # limits
+          maxAscentRate = 5
+          maxDescentRate = 2
+          maxSpeedXY = 5
+          maxHorizAccel = 12
+          maxTiltAngle = .7
 
 
-###=============   Extra Challenge 1 (Optional) =================
+          Simulation #173 (../config/5_TrajectoryFollow.txt)
+          Simulation #174 (../config/5_TrajectoryFollow.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #175 (../config/5_TrajectoryFollow.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #176 (../config/5_TrajectoryFollow.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #177 (../config/5_TrajectoryFollow.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #178 (../config/5_TrajectoryFollow.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
 
 
-Output Reference files : 
-1. Scenario-6-X_TestManyQuads.mp4
-2. Scenario-6-X_TestManyQuads.PNG
+### ======   Extra Challenge 1 (Optional) ======
+
+
+### Output Reference files : 
+#### 1. Scenario-6-X_TestManyQuads.mp4
+#### 2. Scenario-6-X_TestManyQuads.PNG
 
 <p align="center">
 <img src="QUAD_EVAL_Image_Video/Scenario-6-X_TestManyQuads.mp4" width="500"/>
@@ -728,21 +721,21 @@ Output Reference files :
 </p>
 
 
-Simulation #183 (../config/X_TestManyQuads.txt)
-Simulation #184 (../config/X_TestManyQuads.txt)
-Simulation #185 (../config/X_TestManyQuads.txt)
-Simulation #186 (../config/X_TestManyQuads.txt)
-Simulation #187 (../config/X_TestManyQuads.txt)
-Simulation #188 (../config/X_TestManyQuads.txt)
-Simulation #189 (../config/X_TestManyQuads.txt)
-Simulation #190 (../config/X_TestMavlink.txt)
-Simulation #191 (../config/X_TestMavlink.txt)
+    Simulation #183 (../config/X_TestManyQuads.txt)
+    Simulation #184 (../config/X_TestManyQuads.txt)
+    Simulation #185 (../config/X_TestManyQuads.txt)
+    Simulation #186 (../config/X_TestManyQuads.txt)
+    Simulation #187 (../config/X_TestManyQuads.txt)
+    Simulation #188 (../config/X_TestManyQuads.txt)
+    Simulation #189 (../config/X_TestManyQuads.txt)
+    Simulation #190 (../config/X_TestMavlink.txt)
+    Simulation #191 (../config/X_TestMavlink.txt)
 
-###===================   (Optional) ==================================
+### ======   (Optional) ======
 
-Output Reference files : 
-1. Scenario-7-X_TestMavlink.mp4
-2. Scenario-7-X_TestMavlink.PNG
+#### Output Reference files : 
+### 1. Scenario-7-X_TestMavlink.mp4
+### 2. Scenario-7-X_TestMavlink.PNG
 
 <p align="center">
 <img src="QUAD_EVAL_Image_Video/Scenario-7-X_TestMavlink.mp4" width="500"/>
@@ -752,21 +745,21 @@ Output Reference files :
 <img src="QUAD_EVAL_Image_Video/Scenario-7-X_TestMavlink.PNG" width="500"/>
 </p>
 
-Simulation #192 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #193 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #194 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #195 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #196 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #197 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #198 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
-Simulation #199 (../config/X_TestMavlink.txt)
-PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #192 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #193 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #194 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #195 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #196 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #197 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #198 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+          Simulation #199 (../config/X_TestMavlink.txt)
+          PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
 
 
