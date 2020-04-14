@@ -240,23 +240,72 @@ In this next step you will be implementing the prediction step of your filter.
 
 ### Step 4: Magnetometer Update ###
 
-Up until now we've only used the accelerometer and gyro for our state estimation.  In this step, you will be adding the information from the magnetometer to improve your filter's performance in estimating the vehicle's heading.
+In this step, you will be adding the information from the magnetometer to improve your filter's performance in estimating the vehicle's heading.
 
 1. Run scenario `10_MagUpdate`.  This scenario uses a realistic IMU, but the magnetometer update hasn’t been implemented yet. As a result, you will notice that the estimate yaw is drifting away from the real value (and the estimated standard deviation is also increasing).  Note that in this case the plot is showing you the estimated yaw error (`quad.est.e.yaw`), which is drifting away from zero as the simulation runs.  You should also see the estimated standard deviation of that state (white boundary) is also increasing.
 
 2. Tune the parameter `QYawStd` (`QuadEstimatorEKF.txt`) for the QuadEstimatorEKF so that it approximately captures the magnitude of the drift, as demonstrated here:
 
-![mag drift](images/mag-drift.png)
+                        //Pre implementation of UpdateFromMag()
+
+			Simulation #4 (../config/10_MagUpdate.txt)
+			FAIL: ABS(Quad.Est.E.Yaw) was less than 0.120000 for 0.000000 seconds, which was less than 10.000000 seconds
+			FAIL: ABS(Quad.Est.E.Yaw-0.000000) was less than Quad.Est.S.Yaw for 89% of the time
+			Simulation #5 (../config/10_MagUpdate.txt)
+			FAIL: ABS(Quad.Est.E.Yaw) was less than 0.120000 for 0.000000 seconds, which was less than 10.000000 seconds
+			FAIL: ABS(Quad.Est.E.Yaw-0.000000) was less than Quad.Est.S.Yaw for 89% of the time
+
+
+## Output Reference files : 
+#### 1. Step 4-Magnetometer Update-Scenerio_10_pre.gif
+#### 2. Step 4-Magnetometer Update-Scenerio_10_PRE_IMPL.PNG
+
+<p align="center">
+<img src="video_screenshots/Step 4-Magnetometer Update-Scenerio_10_pre.gif" width="500"/>
+</p>
+
+<p align="center">
+<img src="video_screenshots/Step 4-Magnetometer Update-Scenerio_10_PRE_IMPL.PNG" width="500"/>
+</p>
 
 3. Implement magnetometer update in the function `UpdateFromMag()`.  Once completed, you should see a resulting plot similar to this one:
 
-![mag good](images/mag-good-solution.png)
+			
+			//UpdateFromMag()
+			
+			  zFromX(0) = ekfState(6);
+			  float diff = magYaw - ekfState(6);
+			  if (diff > F_PI) {
+			      zFromX(0) += 2.f * F_PI;
+			  }
+			  else if (diff < -F_PI) {
+			      zFromX(0) -= 2.f * F_PI;
+			  }
+ 			  hPrime(0,6) = 1;
+			
+			
+			// Post implementation of UpdateFromMag()
+			Simulation #20 (../config/10_MagUpdate.txt)
+			PASS: ABS(Quad.Est.E.Yaw) was less than 0.120000 for at least 10.000000 seconds
+			PASS: ABS(Quad.Est.E.Yaw-0.000000) was less than Quad.Est.S.Yaw for 69% of the time
+			Simulation #21 (../config/10_MagUpdate.txt)
+			PASS: ABS(Quad.Est.E.Yaw) was less than 0.120000 for at least 10.000000 seconds
+			PASS: ABS(Quad.Est.E.Yaw-0.000000) was less than Quad.Est.S.Yaw for 69% of the time
+			Simulation #22 (../config/10_MagUpdate.txt)
+			PASS: ABS(Quad.Est.E.Yaw) was less than 0.120000 for at least 10.000000 seconds
+			PASS: ABS(Quad.Est.E.Yaw-0.000000) was less than Quad.Est.S.Yaw for 69% of the time
 
-***Success criteria:*** *Your goal is to both have an estimated standard deviation that accurately captures the error and maintain an error of less than 0.1rad in heading for at least 10 seconds of the simulation.*
+## Output Reference files : 
+#### 1. Step 4-Magnetometer Update-Scenerio_10_Post.gif
+#### 2. Step 4-Magnetometer Update-Scenerio_10_POST_IMPL.PNG
 
-**Hint: after implementing the magnetometer update, you may have to once again tune the parameter `QYawStd` to better balance between the long term drift and short-time noise from the magnetometer.**
+<p align="center">
+<img src="video_screenshots/Step 4-Magnetometer Update-Scenerio_10_Post.gif" width="500"/>
+</p>
 
-**Hint: see section 7.3.2 of [Estimation for Quadrotors](https://www.overleaf.com/read/vymfngphcccj) for a refresher on the magnetometer update.**
+<p align="center">
+<img src="video_screenshots/Step 4-Magnetometer Update-Scenerio_10_POST_IMPL.PNG" width="500"/>
+</p>
 
 
 ### Step 5: Closed Loop + GPS Update ###
