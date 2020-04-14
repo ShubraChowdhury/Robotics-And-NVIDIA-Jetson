@@ -26,6 +26,15 @@ For the first step, you will collect some simulated noisy sensor data and estima
 
 3. Run the simulator. If your values are correct, the dashed lines in the simulation will eventually turn green, indicating you’re capturing approx 68% of the respective measurements (which is what we expect within +/- 1 sigma bound for a Gaussian noise model)
 
+		Simulation #24 (../config/06_SensorNoise.txt)
+		PASS: ABS(Quad.GPS.X-Quad.Pos.X) was less than MeasuredStdDev_GPSPosXY for 70% of the time
+		PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 69% of the time
+		Simulation #25 (../config/06_SensorNoise.txt)
+		PASS: ABS(Quad.GPS.X-Quad.Pos.X) was less than MeasuredStdDev_GPSPosXY for 70% of the time
+		PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 69% of the time
+		Simulation #26 (../config/06_SensorNoise.txt)
+		PASS: ABS(Quad.GPS.X-Quad.Pos.X) was less than MeasuredStdDev_GPSPosXY for 70% of the time
+		PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 69% of the time
 ## Output Reference files : 
 #### 1. Step 1-Sensor Noise-Scenerio_6.gif
 #### 2. Step 1-Sensor Noise-Scenerio_6_1.PNG
@@ -62,6 +71,27 @@ Observe that there’s quite a bit of error in attitude estimation.
 
 2. In `QuadEstimatorEKF.cpp`, you will see the function `UpdateFromIMU()` contains a complementary filter-type attitude filter.  To reduce the errors in the estimated attitude (Euler Angles), implement a better rate gyro attitude integration scheme. 
 
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #8 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #9 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #10 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #11 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #12 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #13 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #14 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #15 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #16 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
+			Simulation #17 (../config/07_AttitudeEstimation.txt)
+			PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
 
 ## Output Reference files : 
 #### 1. Step 2-Attitude Estimation-Scenerio_7_SMALL_ANGLE_GYRO_INTEGRATION.gif
