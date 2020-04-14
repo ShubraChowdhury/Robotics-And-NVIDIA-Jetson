@@ -21,8 +21,8 @@ For the first step, you will collect some simulated noisy sensor data and estima
 
 2. Plug in your result into the top of `config/6_Sensornoise.txt`.  Specially, set the values for `MeasuredStdDev_GPSPosXY` and `MeasuredStdDev_AccelXY` to be the values you have calculated.
 
-MeasuredStdDev_GPSPosXY = 0.704 #0.869261 #2 
-MeasuredStdDev_AccelXY =  0.502 #0.552092 #.1 
+		MeasuredStdDev_GPSPosXY = 0.704 #0.869261 #2 
+		MeasuredStdDev_AccelXY =  0.502 #0.552092 #.1 
 
 3. Run the simulator. If your values are correct, the dashed lines in the simulation will eventually turn green, indicating you’re capturing approx 68% of the respective measurements (which is what we expect within +/- 1 sigma bound for a Gaussian noise model)
 
