@@ -163,7 +163,7 @@ In this next step you will be implementing the prediction step of your filter.
 
 			Simulation #27 (../config/08_PredictState.txt)
 			
-			
+			  //PredictState()
 			  gPrime(0, 3) = dt;
 			  gPrime(1, 4) = dt;
 			  gPrime(2, 5) = dt;
